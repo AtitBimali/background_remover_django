@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+ 
+ 
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Your Output</h1>
+          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="{{ output.result.url }}">
+          <div class="text-center lg:w-2/3 w-full">
+            <div class="flex justify-center">
+                <a href="{{ output.result.url }}">
+              <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Download</button>
+                </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+
+</body>
+</html>
+
+
